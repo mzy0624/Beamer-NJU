@@ -1,0 +1,41 @@
+\documentclass{beamer}
+\input{preamble}
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\section{1}
+\begin{frame}{Only}
+\only<1>{
+Only 1
+}
+
+\only<1->{
+Only 1-
+}
+
+\only<2-3>{
+Only 2-3
+}
+\end{frame}
+
+\begin{frame}{Visible}
+\visible<1->{
+Visible 1-
+}
+
+\visible<2>{
+Visible 2
+}
+
+\visible<2-3>{
+Visible 2-3
+}
+\end{frame}
+\section{2}
+\begin{frame}{Block}
+\begin{block}{block}
+block
+\end{block}
+\end{frame}
+\end{document}
